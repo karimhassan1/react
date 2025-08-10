@@ -9,7 +9,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<MainLayout />}>
-            <Route path='product' element={<ProductPage />}></Route>
+            <Route index element={<ProductPage />}></Route>
+            <Route path='/product/:id'></Route>
           </Route>
 
         </Routes>
