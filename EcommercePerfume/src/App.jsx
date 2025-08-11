@@ -2,6 +2,8 @@ import './App.css'
 import MainLayout from './Layout/MainLayout'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ProductPage from './Pages/ProductsPage'
+import NotFound from './Pages/NotFound'
+import LoginPage from './Pages/LoginPage'
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
             <Route index element={<ProductPage />}></Route>
             <Route path='/product/:id'></Route>
           </Route>
+          <Route path='login' element={<LoginPage />} ></Route>
+          <Route path='*' element={<NotFound />}></Route>
 
         </Routes>
 

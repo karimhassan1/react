@@ -1,8 +1,11 @@
+import { useState } from "react";
 import NavItemComponent from "./NavItemComponent";
+import LoginPage from "../Pages/LoginPage";
 
 function HeaderComponent() {
+    const [showLogin, setShowLogin] = useState(true);
     return (
-        <>
+        <div className="d-relative">
             <div className="d-flex justify-content-between bg-black text-white">
                 <div className="d-flex  align-items-center ms-4 ms-md-5 me-4 me-md-5 pt-2 pb-2 col-md-6">
                     <h5 className="fs-3">Logo</h5>
@@ -28,7 +31,14 @@ function HeaderComponent() {
 
 
             </div>
-        </>
+            <div className="d-abosulte top-0">
+                {
+                    showLogin ? <LoginPage /> : ''
+                }
+            </div>
+
+
+        </div>
 
     )
 }
