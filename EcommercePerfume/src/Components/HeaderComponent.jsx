@@ -3,7 +3,7 @@ import NavItemComponent from "./NavItemComponent";
 import LoginPage from "../Pages/LoginPage";
 
 function HeaderComponent() {
-    const [showLogin, setShowLogin] = useState(true);
+    const [showLogin, setShowLogin] = useState(false);
     return (
         <div className="d-relative">
             <div className="d-flex justify-content-between bg-black text-white">

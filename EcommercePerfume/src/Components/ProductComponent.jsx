@@ -8,9 +8,6 @@ function ProductComponent(props) {
                 <h6 className="pt-1 ps-2 mb-0">{props.data.name}</h6>
                 <pre className="ps-2 mb-0">RS. {props.data.price}</pre>
                 <pre className="ps-2 mb-0"><del>{props.data.descount}</del> <small>-11%</small></pre>
-
-
-
             </Link>
 
         </>
