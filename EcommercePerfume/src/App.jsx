@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ProductPage from './Pages/ProductsPage'
 import NotFound from './Pages/NotFound'
 import LoginPage from './Pages/LoginPage'
+import RegisterPage from './Pages/RegisterPage'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path='/product/:id'></Route>
           </Route>
           <Route path='login' element={<LoginPage />} ></Route>
+          <Route path='register' element={<RegisterPage />}></Route>
           <Route path='*' element={<NotFound />}></Route>
 
         </Routes>

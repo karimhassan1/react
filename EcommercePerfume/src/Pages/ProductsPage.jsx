@@ -3,13 +3,13 @@ import ProductComponent from "../Components/ProductComponent";
 
 function ProductPage() {
     return (
-        <div className="ms-4 ms-md-5 me-4 me-md-5">
-            <div className="border mt-1" style={{
+        <div>
+            <div className="border mt-1 w-100" style={{
                 height: "350px"
             }}>
                 Hero Section
             </div>
-            <div className="d-flex mt-3 border flex-wrap justify-content-between">
+                <div className="row">
                 {
                     data.map((item, index) => (
 
@@ -17,7 +17,9 @@ function ProductPage() {
                     ))
 
                 }
+            
             </div>
+            
 
 
         </div>

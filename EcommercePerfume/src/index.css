@@ -1,4 +1,12 @@
-input:focus {
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+:root{
+  --primary-color:rgb(171, 153, 207) !important
+}
+.input-search:focus {
   outline: none !important;
   box-shadow: none !important;
   border-color: transparent !important;
@@ -16,4 +24,26 @@ input:focus {
   box-shadow:
     0 4px 6px rgba(0, 0, 0, 0.1),
     0 8px 16px rgba(0, 0, 0, 0.05);
+}
+.blue-text-color{
+  color: rgb(55, 55, 255);
+}
+.c-color-primary{
+  color:var(--primary-color) !important ;
+}
+.c-bg-primary{
+  background-color: var(--primary-color);
+}
+.c-border-primary{
+  border: 1px solid var(--primary-color);
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+  box-shadow: 1px solid var(--primary-color);
+  border-color: 1px solid var(--primary-color);
+}
+
+.c-gap{
+  gap: 20px;
 }

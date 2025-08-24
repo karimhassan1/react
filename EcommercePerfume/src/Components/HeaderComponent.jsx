@@ -1,44 +1,37 @@
 import { useState } from "react";
 import NavItemComponent from "./NavItemComponent";
-import LoginPage from "../Pages/LoginPage";
 
 function HeaderComponent() {
-    const [showLogin, setShowLogin] = useState(false);
+
     return (
-        <div className="d-relative">
-            <div className="d-flex justify-content-between bg-black text-white">
-                <div className="d-flex  align-items-center ms-4 ms-md-5 me-4 me-md-5 pt-2 pb-2 col-md-6">
-                    <h5 className="fs-3">Logo</h5>
-                    <h2 className="ms-2 fs-3">Name</h2>
+        <>
+            
+            <div className="my-3">
+                <div className="d-flex justify-content-between align-items-center">
+                    <div className="d-flex  align-items-center col-2 col-md-2 col-lg-3">
+                        <img src="../../photo/1000019484-removebg-preview.png" alt="" width={"48px"} />
 
-                </div>
-                <div className="d-sm-flex d-none list-unstyled align-items-center col-5 justify-content-evenly">
-                    {
-                        navItems.map((item, index) => (
-                            <NavItemComponent key={index} content={item} />
-                        ))
-                    }
-                </div>
-
-            </div>
-            <div className="d-flex justify-content-center pt-1">
-                <div className="col-10 col-sm-8 d-flex justify-content-center">
-                    <div className="bg-secondary text-white d-flex rounded col-12 col-md-8 col-lg-6 border border-secondary">
-                        <i className="bi bi-search-heart-fill fs-3 ps-2 pe-2"></i>
-                        <input type="text" className=" ps-3 border-0 w-100 h-100" placeholder="Search in store" />
                     </div>
+                    <div className="c-bg-primary border text-white col-7 d-flex rounded col-md-5 col-lg-4 h-50">
+                            <i className="bi bi-search fs-3 ps-2 pe-2 bg-black"></i>
+                            <input type="text" className=" ps-2 border-0 input-search w-100" placeholder="Search in store" />
+                    </div>
+                    <div className="d-md-flex d-none list-unstyled align-items-center col-5 justify-content-end">
+                        {
+                            navItems.map((item, index) => (
+                                <NavItemComponent key={index} content={item} />
+                            ))
+                        }
+        
+                    </div>
+                    <div className="d-md-none col- border d-flex justify-content-center fs-2">
+                        <i class="bi bi-list"></i>
+                    </div>
+
                 </div>
 
-
             </div>
-            <div className="d-abosulte top-0">
-                {
-                    showLogin ? <LoginPage /> : ''
-                }
-            </div>
-
-
-        </div>
+        </>
 
     )
 }
@@ -52,8 +45,8 @@ const navItems = [
         link: '/'
     },
     {
-        content: 'Sign UP',
-        link: '/sign-up'
+        content: 'Register',
+        link: '/register'
     },
     {
         content: 'Login',

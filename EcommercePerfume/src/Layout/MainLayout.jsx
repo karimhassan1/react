@@ -4,24 +4,36 @@ import HeaderComponent from "../Components/HeaderComponent";
 function MainLayout() {
 
     return (
-        <div>
+        <div className="container">
+            <div className="row">
+              
 
-            <header>
-                <HeaderComponent />
-
-            </header>
-            <main>
-                <Outlet />
-            </main>
-
-            <footer>
-                <h1>this is footer</h1>
-            </footer>
+                <header>
+                    <HeaderComponent />
+                    <hr/>
+                </header>
+          
+                
+           
+                <main>
+                    <Outlet />
+                </main>
+         
+                
+        
+                <footer>
+                    <h1>this is footer</h1>
+                </footer>
+            
+        </div>
+            
+                
 
 
 
 
         </div>
+       
     )
 
 }
