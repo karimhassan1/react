@@ -22,8 +22,8 @@
 
 .product-item:hover {
   box-shadow:
-    0 4px 6px rgba(0, 0, 0, 0.1),
-    0 8px 16px rgba(0, 0, 0, 0.05);
+    20px 4px 6px rgba(255, 0, 0, 0.1),
+    20px 8px 16px rgba(0, 0, 0, 0.05);
 }
 .blue-text-color{
   color: rgb(55, 55, 255);

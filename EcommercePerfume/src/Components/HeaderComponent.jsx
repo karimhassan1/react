@@ -24,7 +24,7 @@ function HeaderComponent() {
                         }
         
                     </div>
-                    <div className="d-md-none col- border d-flex justify-content-center fs-2">
+                    <div className="d-md-none  d-flex justify-content-center fs-2">
                         <i class="bi bi-list"></i>
                     </div>
 

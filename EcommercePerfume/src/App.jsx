@@ -5,6 +5,7 @@ import ProductPage from './Pages/ProductsPage'
 import NotFound from './Pages/NotFound'
 import LoginPage from './Pages/LoginPage'
 import RegisterPage from './Pages/RegisterPage'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
